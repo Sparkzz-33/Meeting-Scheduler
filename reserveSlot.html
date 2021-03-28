@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reserve Slot</title>
+</head>
+
+<body>
+    <h1>Lets reserve a slot for the meeting</h1>
+    <h2>Input the details</h2>
+    <form action="/reserveSave/" method="POST">
+        <label for="slotOwner">Scheduled by : </label>
+        <select name="slotOwner" id="slotOwner">
+            <option value="F1">F1</option>
+            <option value="F2">F2</option>
+            <option value="F3">F3</option>
+            <option value="F4">F4</option>
+            <option value="F5">F5</option>
+            <option value="F6">F6</option>
+            <option value="F7">F7</option>
+            <option value="F8">F8</option>
+            <option value="F9">F9</option>
+            <option value="F10">F10</option>
+        </select><br><br>
+        <label for="slotTitle">Meeting Title:</label>
+        <input type="text" id="slotTitle" name="slotTitle"><br><br>
+        <label for="slotDate">Date:</label>
+        <input type="date" id="slotDate" name="slotDate"><br><br>
+        <label for="slotTime">Start Time</label>
+        <input type="time" id="slotTime" name="slotTime"><br><br>
+
+        <label for="participants">Select all the participants</label><br>
+        <input type="checkbox" name="participants" value="F1">F1 <br>
+        <input type="checkbox" name="participants" value="F2">F2 <br>
+        <input type="checkbox" name="participants" value="F3">F3 <br>
+        <input type="checkbox" name="participants" value="F4">F4 <br>
+        <input type="checkbox" name="participants" value="F5">F5 <br>
+        <input type="checkbox" name="participants" value="F6">F6 <br>
+        <input type="checkbox" name="participants" value="F7">F7 <br>
+        <input type="checkbox" name="participants" value="F8">F8 <br>
+        <input type="checkbox" name="participants" value="F9">F9 <br>
+        <input type="checkbox" name="participants" value="F10">F10 <br><br>
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>

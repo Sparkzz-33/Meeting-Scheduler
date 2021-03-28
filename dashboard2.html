@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <h1>Welcome Admin</h1>
+    <div>
+        <form action="/taskHandler/", method="POST">
+            <input type="radio" id="add" name="task" value="add">
+            <label for="add">Reserve a slot</label><br>
+            <input type="radio" id="retrieve" name="task" value="retrieve">
+            <label for="retrieve">Retrieve slot details</label><br>
+            <input type="radio" id="delete" name="task" value="delete">
+            <label for="delete">Unreserve a slot</label><br>
+            <input type="radio" id="month" name="task" value="month">
+            <label for="month">Month Information</label><br>
+            <input type="submit" value = "Perform">
+        </form>
+    </div>
+</body>
+
+</html>
