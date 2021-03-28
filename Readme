@@ -1,0 +1,36 @@
+Readme File for Meeting Scheduler by Ashutosh Rajput (CS17B007)
+This project is a part of assignment for Distributed Systems course.
+
+Features Implemented:
+    1. Meeting Slot reservation for faculties F1-F10
+    2. View Day Schedule for all faculties (Displays all their meetings for the day)
+    3. Unreserve a meeting (Allows faculty to unreserve their meeting slots)
+    4. View all the meetings for month (Exclusive for HOD)
+
+Highlights:
+    File system used a database (JSON files)
+    Multiple meetings can be held at a single time, provided that there is no overlap between participants of both the meetings
+
+Steps:
+    1. Build "meetingScheduler.go" using command "go build meetingScheduler.go"
+    2. Run the server file using command "./meetingScheduler"
+    3. Access "http://localhost:8080/login/"
+    4. Enter faculty name in all Caps format (For ex. F1, F10)
+    5. The faculty will be redirected to respective dashboard based on the role (HOD and Non-HOD)
+    6. To reserve a slot, click the respective option from the menu
+        6.1 Fill the slot details
+        6.2 If a meeting is possible, the slot will be booked and faculty will be redirected to login page again
+        6.3 If a meeting is not possible, faculty will be redirected to failure page and will be asked to reschedule if needed.
+    7. To unreserve a slot, click the respective option from the menu
+        7.1 Fill the slot details
+        7.2 If the slot is reserved, it will be deleted succesfully. Faculty will be redirected to login
+        7.3 Else, the faculty will be prompted about the failure and asked to try again if needed
+    8. To view day schedule, click the respective option from the menu
+        8.1 Enter the date and faculty name
+        8.2 The schedule will be displayed
+    9. If HOD wants to view all the meetings in the month, click the respective option from the menu
+        9.1 Enter the year and the month in the format ("2021" and "03")
+        9.2 All the meetings in the month will be displayed
+NOTE : In multiple instances, I have asked fot the faculty name and also redirected the faculty to login page
+       This is not ideal, but I havent implemented sessions and hence need to get the username at multiple levels.
+**the assigment was completed with the help of discussions with KS Koushik (CS17B013)
